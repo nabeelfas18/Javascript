@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function capslock()
+        {
+            var x=document.getElementById("name").value;
+            if (/[A-Z]/.test(x))
+            
+            {
+                
+                document.getElementById('show').innerHTML="remove capital letter"
+            }
+            else{
+                document.getElementById('show').innerHTML=""
+            }
+            
+        }
+    </script>
+</head>
+<body>
+Enter Your Name:<input type="text" id="name" name="name"  onKeyUp="return capslock()"><br>
+  <label id="show" style="color:red"></label><br>
+</body>
+</html>
